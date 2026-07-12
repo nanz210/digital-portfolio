@@ -377,32 +377,233 @@
         <section id="project2" class="section project-section">
             <div class="section-header">
                 <p class="small-heading">Project 2</p>
-                <h2>Project Title Placeholder</h2>
+                <h2>GO&amp;T Technology Obsolescence Dashboard</h2>
                 <p>
-                    This section will be updated with details about my second major project.
+                    This project focused on preparing and transforming operational data into a
+                    dashboard-ready dataset for tracking technology obsolescence, SLA status,
+                    ownership information, and reporting timelines.
                 </p>
             </div>
 
-            <div class="project-card">
-                <div>
-                    <h3>Project Overview</h3>
-                    <p>
-                        Add a short summary of the second project here.
-                    </p>
+            <div class="project-overview-card">
+                <div class="project-label">
+                    <span>Python</span>
+                    <span>Pandas</span>
+                    <span>Power BI</span>
+                    <span>Power Query</span>
+                    <span>DAX</span>
+                    <span>ETL Pipeline</span>
                 </div>
 
-                <div>
-                    <h3>My Contribution</h3>
+                <div class="point-list">
                     <p>
-                        Add your role and responsibilities in this project.
+                        <strong>Project Purpose:</strong> To transform multiple operational data
+                        sources into a clean, standardised, and dashboard-ready reporting dataset.
+                    </p>
+
+                    <p>
+                        <strong>Problem:</strong> The source files had different structures, fields,
+                        and reporting requirements, making it difficult to use them directly in
+                        Power BI.
+                    </p>
+
+                    <p>
+                        <strong>My Role:</strong> I worked on the data preparation and transformation
+                        process by creating Python scripts, preparing lookup tables, standardising
+                        datasets, and supporting Power BI reporting logic.
+                    </p>
+
+                    <p>
+                        <strong>Dashboard Use:</strong> The dashboard helps users monitor technology
+                        obsolescence items, SLA timelines, overdue records, planned items, completed
+                        items, and detailed breakdowns by ownership or reporting hierarchy.
+                    </p>
+
+                    <p>
+                        <strong>Outcome:</strong> The final output was a standardised reporting
+                        dataset that could be used in Power BI to support clearer tracking,
+                        filtering, and SLA reporting.
                     </p>
                 </div>
+            </div>
 
-                <div>
-                    <h3>Outcome</h3>
-                    <p>
-                        Add what was completed, improved, or learned through this project.
-                    </p>
+            <div class="project-subsection">
+                <h3>ETL Pipeline Overview</h3>
+
+                <div class="etl-pipeline">
+                    <div class="etl-step">
+                        <span class="etl-icon">📂</span>
+                        <h4>Raw Data</h4>
+                        <p>Loaded multiple operational source files.</p>
+                    </div>
+
+                    <div class="etl-arrow">→</div>
+
+                    <div class="etl-step">
+                        <span class="etl-icon">🗂️</span>
+                        <h4>Reference Mapping</h4>
+                        <p>Created lookup tables for reporting hierarchy and ownership mapping.</p>
+                    </div>
+
+                    <div class="etl-arrow">→</div>
+
+                    <div class="etl-step">
+                        <span class="etl-icon">⚙️</span>
+                        <h4>Standardisation</h4>
+                        <p>Restructured different source formats into one common dataset.</p>
+                    </div>
+
+                    <div class="etl-arrow">→</div>
+
+                    <div class="etl-step">
+                        <span class="etl-icon">🔎</span>
+                        <h4>Data Enrichment</h4>
+                        <p>Added mapped reporting fields and ownership-related information.</p>
+                    </div>
+
+                    <div class="etl-arrow">→</div>
+
+                    <div class="etl-step">
+                        <span class="etl-icon">📊</span>
+                        <h4>SLA Categorisation</h4>
+                        <p>Normalised metric values and grouped records into SLA bands.</p>
+                    </div>
+
+                    <div class="etl-arrow">→</div>
+
+                    <div class="etl-step">
+                        <span class="etl-icon">✅</span>
+                        <h4>Final Output</h4>
+                        <p>Exported a dashboard-ready dataset for Power BI reporting.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>Scripts Created</h3>
+
+                <div class="function-grid">
+                    <div class="function-card">
+                        <h4>Script 1: Lookup Table Creation</h4>
+                        <p>
+                            This script created a reference lookup table by extracting unique
+                            values from a master dataset. The lookup was used to map a primary
+                            business attribute to its corresponding reporting hierarchy.
+                        </p>
+                    </div>
+
+                    <div class="function-card">
+                        <h4>Script 2: Regional Mapping</h4>
+                        <p>
+                            This script generated a reference table for geographical ownership
+                            information. It applied both primary mapping and fallback logic to
+                            improve coverage where values were missing.
+                        </p>
+                    </div>
+
+                    <div class="function-card">
+                        <h4>Script 3: Main ETL Pipeline</h4>
+                        <p>
+                            This script loaded two operational datasets, standardised their
+                            structures, combined them, enriched them using lookup tables, normalised
+                            metric values, created SLA bands, and exported the final reporting file.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>Technical Work</h3>
+
+                <div class="challenge-grid">
+                    <div class="challenge-card">
+                        <h4>Standardising Multiple Sources</h4>
+                        <p>
+                            The two source files had different column structures, so I had to
+                            reshape them into a common format before combining them into one
+                            reporting dataset.
+                        </p>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>Building Lookup Logic</h4>
+                        <p>
+                            I created lookup tables to map classification fields, reporting
+                            hierarchy, ownership groups, and regional information. These mappings
+                            helped enrich the final dataset.
+                        </p>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>Cleaning and Transforming Data</h4>
+                        <p>
+                            I cleaned key fields, removed records that could not be evaluated, and
+                            converted inconsistent metric values into standard numeric values.
+                        </p>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>Creating SLA Bands</h4>
+                        <p>
+                            I derived SLA and aging categories so the dashboard could display
+                            whether records fell within different timeline bands, such as short,
+                            medium, long, or overdue periods.
+                        </p>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>Power Query Transformations</h4>
+                        <p>
+                            In Power BI, I also worked with Power Query steps such as changing data
+                            types, replacing values, adding custom columns, and unpivoting selected
+                            columns to make the data easier to visualise.
+                        </p>
+                    </div>
+
+                    <div class="challenge-card">
+                        <h4>DAX Measure Logic</h4>
+                        <p>
+                            I worked with DAX measures to calculate source counts and support SLA
+                            matrix visuals. This helped the dashboard display values based on the
+                            selected timeline or aging bucket.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="project-subsection">
+                <h3>Dashboard Screenshots</h3>
+
+                <p class="censor-note">
+                    Note: All dashboard data, system names, ownership details, and internal
+                    identifiers shown in the screenshots have been censored to protect
+                    sensitive and confidential information.
+                </p>
+
+                <div class="dashboard-gallery">
+                    <figure>
+                        <img src="project2-dashboard.png" alt="Technology Obsolescence Power BI dashboard screenshot" />
+                        <figcaption>
+                            Dashboard Summary: shows SLA summary, overdue items, planned items,
+                            completed items, and detailed technology breakdowns.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="project2-power-query.png" alt="Power Query applied steps screenshot" />
+                        <figcaption>
+                            Power Query Steps: shows transformation steps such as changing types,
+                            replacing values, adding custom fields, and unpivoting columns.
+                        </figcaption>
+                    </figure>
+
+                    <figure>
+                        <img src="project2-dax-measure.png" alt="DAX measure screenshot" />
+                        <figcaption>
+                            DAX Measure Logic: supports SLA matrix calculations and dynamic
+                            reporting based on selected timeline categories.
+                        </figcaption>
+                    </figure>
                 </div>
             </div>
         </section>
@@ -411,63 +612,135 @@
         <section id="reflection" class="section">
             <div class="section-header">
                 <p class="small-heading">Reflection</p>
-                <h2>Harmonised Account Services Dashboard Reflection</h2>
+                <h2>Project Reflections</h2>
                 <p>
-                    This reflection focuses on my experience working on the Account Services Harmonised Dashboard,
-                    including what went well, what was challenging, and what I can improve.
+                    This section reflects on my learning experience from the dashboarding and data
+                    engineering projects I worked on during my internship.
                 </p>
             </div>
 
-            <div class="reflection-grid">
-                <div class="reflection-card">
-                    <h3>What Went Well</h3>
-                    <p>
-                        I was able to contribute to a dashboard that helped standardise reporting across different
-                        operations departments. Creating a harmonised layout made the dashboard easier for users
-                        and senior management to understand and compare.
-                    </p>
-                    <p>
-                        I also improved my Power BI and data preparation skills by working on the Monitoring View
-                        and People View. For the People View, I gained more experience creating dynamic measures
-                        and building KPI cards that could display availability, percentages, and filtering behaviour.
-                    </p>
-                </div>
+            <!-- REFLECTION 1 -->
+            <div class="project-subsection">
+                <h3>Harmonised Account Services Dashboard Reflection</h3>
 
-                <div class="reflection-card">
-                    <h3>What Did Not Go Well</h3>
-                    <p>
-                        One challenge was moving from dummy data to real data. Dummy data was easier to understand,
-                        but the real Hue table had many columns, unclear field names, and different values that
-                        needed to be interpreted correctly before they could be used in Power BI.
-                    </p>
-                    <p>
-                        Another difficulty was replacing static placeholder values with dynamic measures. Some
-                        measures depended on other measures, so one change could affect multiple KPI cards and
-                        visuals. This made rebuilding and testing more time-consuming.
-                    </p>
-                </div>
+                <div class="reflection-grid">
+                    <div class="reflection-card">
+                        <h3>What Went Well</h3>
+                        <p>
+                            I was able to contribute to a dashboard that helped standardise reporting
+                            across different operations departments. Creating a harmonised layout made
+                            the dashboard easier for users and senior management to understand and compare.
+                        </p>
+                        <p>
+                            I also improved my Power BI and data preparation skills by working on the
+                            Monitoring View and People View. For the People View, I gained more experience
+                            creating dynamic measures and building KPI cards that could display availability,
+                            percentages, and filtering behaviour.
+                        </p>
+                    </div>
 
-                <div class="reflection-card">
-                    <h3>What Can Be Improved</h3>
-                    <p>
-                        I can improve by spending more time understanding the real data structure before building
-                        or updating visuals. This would help me map the correct fields faster and reduce the need
-                        to rework visuals later.
-                    </p>
-                    <p>
-                        I can also improve by documenting measure logic more clearly, especially when measures have
-                        dependencies. This would make troubleshooting easier and help future users understand how
-                        the dashboard calculations work.
-                    </p>
-                </div>
+                    <div class="reflection-card">
+                        <h3>What Did Not Go Well</h3>
+                        <p>
+                            One challenge was moving from dummy data to real data. Dummy data was easier
+                            to understand, but the real Hue table had many columns, unclear field names,
+                            and different values that needed to be interpreted correctly before they could
+                            be used in Power BI.
+                        </p>
+                        <p>
+                            Another difficulty was replacing static placeholder values with dynamic
+                            measures. Some measures depended on other measures, so one change could affect
+                            multiple KPI cards and visuals.
+                        </p>
+                    </div>
 
-                <div class="reflection-card summary-card">
-                    <h3>Summary</h3>
-                    <p>
-                        Overall, working on the Harmonised Account Services Dashboard helped me understand that
-                        dashboard development is not only about making
-                        visuals look consistent.
-                    </p>
+                    <div class="reflection-card">
+                        <h3>What Can Be Improved</h3>
+                        <p>
+                            I can improve by spending more time understanding the real data structure
+                            before building or updating visuals. This would help me map the correct fields
+                            faster and reduce the need to rework visuals later.
+                        </p>
+                        <p>
+                            I can also improve by documenting measure logic more clearly, especially when
+                            measures have dependencies. This would make troubleshooting easier and help
+                            future users understand how the dashboard calculations work.
+                        </p>
+                    </div>
+
+                    <div class="reflection-card summary-card">
+                        <h3>Summary</h3>
+                        <p>
+                            Overall, working on the Harmonised Account Services Dashboard helped me
+                            understand that dashboard development is not only about making visuals look
+                            consistent. It also requires understanding user needs, preparing reliable data,
+                            building accurate measures, and testing how each part of the dashboard works
+                            together.
+                        </p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- REFLECTION 2 -->
+            <div class="project-subsection">
+                <h3>Technology Obsolescence Reporting Dashboard Reflection</h3>
+
+                <div class="reflection-grid">
+                    <div class="reflection-card">
+                        <h3>What Went Well</h3>
+                        <p>
+                            I was able to improve a manual and time-consuming data preparation process.
+                            Initially, the data had to be mapped manually, which took more than 5 hours
+                            because around 2,000 rows had to be checked and mapped.
+                        </p>
+                        <p>
+                            By using Python to create mapping files and automate part of the ETL process,
+                            I reduced the work to about 30 minutes. This made the refresh process much
+                            more efficient, especially because the data originally had to be refreshed
+                            every week.
+                        </p>
+                    </div>
+
+                    <div class="reflection-card">
+                        <h3>What Did Not Go Well</h3>
+                        <p>
+                            The original manual mapping process was very inefficient and not practical
+                            for a workplace setting. Repeating a 5-hour task every week would take up too
+                            much time and increase the chances of human error.
+                        </p>
+                        <p>
+                            Halfway through the project, the structure of the incoming data changed, which
+                            caused the pipeline to break. This showed me that even an automated process
+                            can fail if the input data changes unexpectedly.
+                        </p>
+                    </div>
+
+                    <div class="reflection-card">
+                        <h3>What Can Be Improved</h3>
+                        <p>
+                            I can improve the pipeline by adding stronger validation checks before the
+                            script runs fully. For example, the script could check whether the expected
+                            columns exist, whether row counts look correct, and whether key fields are
+                            missing or renamed.
+                        </p>
+                        <p>
+                            I can also improve by documenting the mapping logic and refresh steps more
+                            clearly, so that the process is easier to maintain and troubleshoot in the
+                            future.
+                        </p>
+                    </div>
+
+                    <div class="reflection-card summary-card">
+                        <h3>Summary</h3>
+                        <p>
+                            Overall, this project helped me understand the importance of automation,
+                            efficiency, and data validation. By moving from manual mapping to a
+                            Python-based ETL process, I was able to save time and create a more centralised
+                            workflow. When the data structure changed, tracking the number of rows during
+                            each refresh helped me identify the issue quickly, and having the logic
+                            centralised in Python allowed me to fix the problem in one place.
+                        </p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -543,8 +816,10 @@
                 internship at OCBC.
             </p>
 
-            <div class="contact-placeholder">
-                <p>Email / LinkedIn / GitHub details can be added here later.</p>
+            <div class="contact-links">
+                <a href="https://www.linkedin.com/in/ivanna-dias-b69222314/" target="_blank" class="contact-button">
+                    View My LinkedIn
+                </a>
             </div>
         </section>
     </main>
